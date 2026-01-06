@@ -1,0 +1,30 @@
+{
+    "course": "Enablement Medallion Labs",
+    "version": "1.0.0",
+    "code": "FE-MEDALLION",
+    "labs": {
+        "lti": true,
+        "defaults": {
+            "workspace": 50,
+            "lab_interface": {
+                "information": [
+                    "Timer",
+                    "Budget",
+                    "Details Button",
+                    "Readme Button"
+                ],
+                "panels": [
+                    "Console",
+                    "Html",
+                    "Nav Bar"
+                ]
+            },
+            "cost_control": {
+                "session_length": 300
+            },
+            "dbacademy_version": "py-1.0.x-venv-0.32.0",
+            "config": {}
+        },
+        "list": []
+    }
+}

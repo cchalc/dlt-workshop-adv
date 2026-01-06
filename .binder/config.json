@@ -1,0 +1,61 @@
+{
+  "content": {
+      "src": "this_gets_replaced_by_binder"
+  },
+  "user_config": {
+      "catalog": "RANDOM",
+      "cluster_config": {
+          "spark_version": "17.3.x-cpu-ml-scala2.13",
+          "node_type_id": "i3.xlarge",
+          "autotermination_minutes": 60
+      },
+      "warehouse": {
+          "name": "shared_warehouse",
+          "auto_stop_mins": "30",
+          "cluster_size": "2X-Small",
+          "warehouse_type": "PRO",
+          "enable_serverless_compute": true
+      }
+  },
+  "metastore_config": {
+    "enable_create_catalog": true,
+    "system_schemas": 
+    [
+      "access",
+      "compute",
+      "query",
+      "lakeflow"
+    ]
+  },
+  "cluster_policies": [
+      {
+          "template": "JOBS"
+      },
+      {
+          "template": "DLT"
+      }
+  ],
+  "datasets": [
+    {
+      "listing_name": "Airline Performance Data",
+      "name": "airline",
+      "version": "v01"
+    },
+    {
+      "listing_name": "Airbnb Sample Data",
+      "name": "airbnb_sample_data",
+      "version": "v01"
+    }, 
+    {
+      "listing_name": "Telco Customer Dataset",
+      "name": "telco_customer_dataset",
+      "version": "v01"
+    }
+  ],
+  "marketplace": [
+    {
+      "listing_name": "Simulated Retail Customer Data",
+      "catalog": "dbacademy_retail"
+    }
+  ]
+}
